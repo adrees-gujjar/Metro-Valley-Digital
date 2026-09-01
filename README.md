@@ -1,11 +1,72 @@
-<div align="center">
+# Modern Next.js Business Template
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, responsive business website template built with Next.js 14, React 18, and Bootstrap 5. Features a comprehensive set of components and pages for building professional business websites.
 
-  <h1>Built with AI Studio</h2>
+## ✨ Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Modern Design** - Clean and professional UI/UX
+- **Fully Responsive** - Works perfectly on all devices
+- **Next.js 14** - Utilizing the latest Next.js features
+- **Interactive Components** - Including:
+  - Animated counters
+  - Modal videos
+  - Image lightbox
+  - Accordions
+  - Tab interfaces
+  - Swiper sliders
+- **Multiple Page Templates** - Ready-to-use pages for:
+  - Home
+  - About
+  - Services
+  - Portfolio
+  - Blog
+  - Contact
+  - Team
+  - Testimonials
+  - FAQ
+  - Pricing
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Tech Stack
 
-</div>
+- [Next.js 14](https://nextjs.org/)
+- [React 18](https://reactjs.org/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Swiper](https://swiperjs.com/)
+- [Animate.css](https://animate.style/)
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/DaInfernalCoder/professional-template-nextjs.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd template-nextjs
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+## 🛠️ Usage
+
+### Development Server
+
+```bash
+npm run dev
+```
+Opens development server at [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
