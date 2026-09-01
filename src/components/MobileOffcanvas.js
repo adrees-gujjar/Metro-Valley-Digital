@@ -251,26 +251,6 @@ export default function MobileOffcanvas({ isSticky = false }) {
                           Faq&apos;s
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/404") ? "active" : ""}`}
-                          href="/404"
-                        >
-                          404 Page
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/mail-success") ? "active" : ""
-                          }`}
-                          href="/mail-success"
-                        >
-                          Mail Success
-                        </Link>
-                      </li>
                     </ul>
                   </li>
                   <li>

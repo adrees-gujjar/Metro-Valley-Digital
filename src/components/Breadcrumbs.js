@@ -18,7 +18,9 @@ export default function Breadcrumbs(props) {
           <div className="row">
             <div className="col-lg-7 col-md-7 col-12">
               <div className="breadcrumbs-content">
-                <h2>{title ? title : "Services"}</h2>
+                <h1 style={{ color: "#ffffff", fontWeight: "800", fontSize: "36px", marginBottom: "12px", lineHeight: "1.2" }}>
+                  {title ? title : "Services"}
+                </h1>
                 <p>
                   {description
                     ? description

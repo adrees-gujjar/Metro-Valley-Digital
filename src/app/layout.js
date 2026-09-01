@@ -7,6 +7,7 @@ import ColorLayout from "@/components/ColorLayout";
 import Preloader from "@/components/Preloader";
 import AnimationProvider from "@/components/AnimationProvider";
 import { Poppins } from "next/font/google";
+import { SitewideSchemas } from "@/components/SeoSchemas";
 
 // Bootstrap CSS
 import "../../public/css/bootstrap.min.css";
@@ -41,23 +42,80 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL("https://metrovalleydigital.com"),
-  title: "Metro Valley Digital - Growth Agency & Software House",
+  title: {
+    default: "Metro Valley Digital | SEO & Growth Marketing Agency",
+    template: "%s | Metro Valley Digital",
+  },
   description:
-    "Premier digital growth agency and software house based in Toronto, Canada & Lahore, Pakistan specializing in Local SEO, Google 3-Pack rankings, Paid Ads (Meta, TikTok, Google Ads), custom web & mobile apps, and AI chatbot automation.",
+    "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Toronto & Lahore growth agency engineering proven client ROI.",
+  keywords: [
+    "Local SEO Agency",
+    "Google 3-Pack Optimization",
+    "Toronto Digital Marketing Agency",
+    "Paid Ads Management",
+    "Meta Ads Agency",
+    "TikTok Ads Agency",
+    "Google Ads Management",
+    "Next.js Web Development",
+    "AI Chatbot Integration",
+    "Generative Engine Optimization",
+    "Lahore Software House",
+  ],
+  authors: [{ name: "Metro Valley Digital", url: "https://metrovalleydigital.com" }],
+  creator: "Metro Valley Digital",
+  publisher: "Metro Valley Digital",
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: "https://metrovalleydigital.com",
+  },
   openGraph: {
-    title: "Metro Valley Digital - Growth Agency & Software House",
+    title: "Metro Valley Digital | SEO & Growth Marketing Agency",
     description:
-      "Dominate local search and accelerate paid ads ROI with Metro Valley Digital (Toronto, ON & Lahore, PK).",
+      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Toronto & Lahore growth agency engineering proven client ROI.",
     url: "https://metrovalleydigital.com",
     siteName: "Metro Valley Digital",
     locale: "en_CA",
     type: "website",
+    images: [
+      {
+        url: "https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Metro Valley Digital - Growth Agency & Software House",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Metro Valley Digital | SEO & Growth Marketing Agency",
+    description:
+      "Dominate local search, rank #1 on Google 3-Pack, and scale paid ads with Metro Valley Digital. Toronto & Lahore growth agency engineering proven client ROI.",
+    images: ["https://metrovalleydigital.com/images/metro_agency_hero_1788191381646.jpg"],
+    creator: "@metrovalleydig",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <SitewideSchemas />
+      </head>
       <body className={poppins.className}>
         <>
           <Preloader />

@@ -206,28 +206,6 @@ export default function Navbar() {
                                         Faq&apos;s
                                       </Link>
                                     </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/404" ? "active" : ""
-                                        }`}
-                                        href="/404"
-                                      >
-                                        404 Page
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/mail-success"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/mail-success"
-                                      >
-                                        Mail Success
-                                      </Link>
-                                    </li>
                                   </ul>
                                 </li>
                                 <li>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SingleBlog from "@/components/SingleBlog";
+import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 import BlogImg1 from "../../../public/images/local_seo_maps_1788193488227.jpg";
 import BlogImg2 from "../../../public/images/paid_ads_roas_1788191423627.jpg";
@@ -14,9 +15,43 @@ import AdminImg2 from "../../../public/images/team_paid_media_lead_1788194149805
 import AdminImg3 from "../../../public/images/team_ai_architect_1788194166603.jpg";
 import AdminImg4 from "../../../public/images/team_growth_strategist_1788194183743.jpg";
 
+export const metadata = {
+  title: "SEO & Growth Marketing Insights | Metro Valley Blog",
+  description:
+    "Expert tactical playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI automation.",
+  alternates: {
+    canonical: "https://metrovalleydigital.com/blog",
+  },
+  openGraph: {
+    title: "SEO & Growth Marketing Insights | Metro Valley Blog",
+    description:
+      "Expert tactical playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI automation.",
+    url: "https://metrovalleydigital.com/blog",
+    siteName: "Metro Valley Digital",
+    locale: "en_CA",
+    type: "website",
+    images: [
+      {
+        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Metro Valley Digital Blog Insights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO & Growth Marketing Insights | Metro Valley Blog",
+    description:
+      "Expert tactical playbooks on Local SEO, Google Maps 3-Pack rankings, performance PPC ads, Next.js web development, and conversational AI automation.",
+    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+  },
+};
+
 export default function blog() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: "Blog", url: "/blog" }]} />
       <Breadcrumbs
         title="Growth & Engineering Insights"
         description="Tactical guides, case studies, and engineering breakdowns on Local SEO, Google 3-Pack rankings, high-ROAS paid ads, and Next.js software architecture."

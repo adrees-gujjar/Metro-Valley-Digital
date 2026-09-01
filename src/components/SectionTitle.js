@@ -5,7 +5,7 @@ export default function SectionTitle(props) {
     <>
       <div className="section-title">
         <h6>{smTitle ? smTitle : "Services"}</h6>
-        <h3>{title ? title : "Our Services"}</h3>
+        <h2>{title ? title : "Our Services"}</h2>
         <div className="line-bot"></div>
         <p>
           {description

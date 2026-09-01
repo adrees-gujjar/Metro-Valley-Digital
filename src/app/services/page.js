@@ -2,6 +2,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import SingleService from "@/components/SingleService";
 import Sliders from "../Home/Testimonial/Sliders";
+import { BreadcrumbSchema, ServiceCatalogSchema } from "@/components/SeoSchemas";
 
 import ServiceImg1 from "../../../public/images/local_seo_maps_1788193488227.jpg";
 import ServiceImg2 from "../../../public/images/paid_ads_roas_1788191423627.jpg";
@@ -10,9 +11,44 @@ import ServiceImg4 from "../../../public/images/local_seo_growth_1788191403673.j
 import ServiceImg5 from "../../../public/images/smm_video_growth_1788193518995.jpg";
 import ServiceImg6 from "../../../public/images/ai_code_agents_1788193536610.jpg";
 
+export const metadata = {
+  title: "Digital Marketing & Local SEO Services | Metro Valley",
+  description:
+    "Drive measurable revenue with high-impact Local SEO, Google Maps 3-Pack ranking, multi-channel PPC ads, AI lead automation, and full-stack web engineering.",
+  alternates: {
+    canonical: "https://metrovalleydigital.com/services",
+  },
+  openGraph: {
+    title: "Digital Marketing & Local SEO Services | Metro Valley",
+    description:
+      "Drive measurable revenue with high-impact Local SEO, Google Maps 3-Pack ranking, multi-channel PPC ads, AI lead automation, and full-stack web engineering.",
+    url: "https://metrovalleydigital.com/services",
+    siteName: "Metro Valley Digital",
+    locale: "en_CA",
+    type: "website",
+    images: [
+      {
+        url: "https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Metro Valley Digital Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Marketing & Local SEO Services | Metro Valley",
+    description:
+      "Drive measurable revenue with high-impact Local SEO, Google Maps 3-Pack ranking, multi-channel PPC ads, AI lead automation, and full-stack web engineering.",
+    images: ["https://metrovalleydigital.com/images/local_seo_maps_1788193488227.jpg"],
+  },
+};
+
 export default function Services() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: "Services", url: "/services" }]} />
+      <ServiceCatalogSchema />
       <Breadcrumbs
         title="Our Growth & Tech Services"
         description="Comprehensive Local SEO, High-ROAS Paid Ads, Next.js Web Development, and AI Automation."

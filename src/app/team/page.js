@@ -1,6 +1,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import SingleTeam from "@/components/SingleTeam";
+import { BreadcrumbSchema } from "@/components/SeoSchemas";
 
 import TeamImg1 from "../../../public/images/team_toronto_lead_1788194135436.jpg";
 import TeamImg2 from "../../../public/images/team_paid_media_lead_1788194149805.jpg";
@@ -11,9 +12,43 @@ import TeamImg6 from "../../../public/images/testi_sarah_1788194216686.jpg";
 import TeamImg7 from "../../../public/images/team_ai_architect_1788194166603.jpg";
 import TeamImg8 from "../../../public/images/testi_marcus_1788194200341.jpg";
 
+export const metadata = {
+  title: "Meet Our Growth & Engineering Team | Metro Valley",
+  description:
+    "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+  alternates: {
+    canonical: "https://metrovalleydigital.com/team",
+  },
+  openGraph: {
+    title: "Meet Our Growth & Engineering Team | Metro Valley",
+    description:
+      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+    url: "https://metrovalleydigital.com/team",
+    siteName: "Metro Valley Digital",
+    locale: "en_CA",
+    type: "website",
+    images: [
+      {
+        url: "https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Metro Valley Digital Team Leadership",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meet Our Growth & Engineering Team | Metro Valley",
+    description:
+      "Meet the search strategists, paid media buyers, and full-stack software architects scaling businesses across North America and South Asia at Metro Valley.",
+    images: ["https://metrovalleydigital.com/images/team_toronto_lead_1788194135436.jpg"],
+  },
+};
+
 export default function Team() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: "Our Team", url: "/team" }]} />
       <Breadcrumbs
         title="Our Growth & Engineering Leadership"
         description="Meet the strategists, search engineers, media buyers, and full-stack developers driving outcomes across Toronto and Lahore."

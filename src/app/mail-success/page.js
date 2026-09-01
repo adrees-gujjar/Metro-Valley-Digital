@@ -1,6 +1,16 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Inquiry Received | Metro Valley Digital",
+  description:
+    "Thank you for contacting Metro Valley Digital. Our growth strategy team is analyzing your market data and will be in touch within 24 hours.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 export default function MailSuccess() {
   return (
     <>
