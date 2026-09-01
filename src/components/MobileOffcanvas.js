@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Offcanvas } from "react-bootstrap";
 import AgencyLogo from "./AgencyLogo";
 
-export default function MobileOffcanvas() {
+export default function MobileOffcanvas({ isSticky = false }) {
   const pathname = usePathname();
 
   const [show, setShow] = useState(false);
@@ -28,11 +28,53 @@ export default function MobileOffcanvas() {
       <button
         type="button"
         onClick={handleShow}
-        className="mobile-menu-offcanvas-toggler"
+        className="mobile-menu-offcanvas-toggler d-inline-flex flex-column align-items-center justify-content-center"
+        aria-label="Open Navigation Menu"
+        style={{
+          width: "42px",
+          height: "42px",
+          borderRadius: "8px",
+          backgroundColor: isSticky ? "rgba(15, 23, 42, 0.08)" : "rgba(255, 255, 255, 0.15)",
+          border: isSticky ? "1px solid rgba(15, 23, 42, 0.18)" : "1px solid rgba(255, 255, 255, 0.3)",
+          cursor: "pointer",
+          padding: "0",
+          gap: "5px",
+          zIndex: 999,
+          transition: "all 0.2s ease",
+        }}
       >
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
+        <span
+          className="line"
+          style={{
+            width: "22px",
+            height: "2.5px",
+            backgroundColor: isSticky ? "#0f172a" : "#ffffff",
+            borderRadius: "2px",
+            display: "block",
+          }}
+        ></span>
+        <span
+          className="line"
+          style={{
+            width: "22px",
+            height: "2.5px",
+            backgroundColor: isSticky ? "#0f172a" : "#ffffff",
+            borderRadius: "2px",
+            display: "block",
+          }}
+        ></span>
+        <span
+          className="line"
+          style={{
+            width: "16px",
+            height: "2.5px",
+            backgroundColor: "var(--primary-color)",
+            borderRadius: "2px",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "6px",
+          }}
+        ></span>
       </button>
 
       {/* <!-- Mobile Menu Modal --> */}

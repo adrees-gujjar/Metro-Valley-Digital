@@ -29,7 +29,7 @@ export default function Links() {
               </Link>
             </li>
             <li>
-              <Link href="/#ai-business-profile-optimization">
+              <Link href="/services">
                 <i className="fa fa-angle-double-right"></i>AI Search Optimization (GEO)
               </Link>
             </li>

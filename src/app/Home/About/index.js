@@ -26,8 +26,8 @@ export default function About() {
                 <div
                   className="activity"
                   style={{
-                    background: "linear-gradient(135deg, #0d6efd 0%, #0045a8 100%)",
-                    boxShadow: "0 10px 25px rgba(13, 110, 253, 0.4)",
+                    background: "linear-gradient(135deg, #28b463 0%, #16a34a 100%)",
+                    boxShadow: "0 10px 25px rgba(40, 180, 99, 0.4)",
                     borderRadius: "12px",
                     padding: "20px",
                   }}
@@ -57,7 +57,7 @@ export default function About() {
                 <div className="feature mt-4">
                   {/* <!-- Single Feature --> */}
                   <div className="single-feature mb-3 d-flex align-items-start gap-3">
-                    <div style={{ width: "48px", height: "48px", borderRadius: "10px", background: "rgba(13, 110, 253, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#0d6efd", fontSize: "20px", flexShrink: 0 }}>
+                    <div style={{ width: "48px", height: "48px", borderRadius: "10px", background: "rgba(40, 180, 99, 0.12)", display: "flex", alignItems: "center", justifyContent: "center", color: "#28b463", fontSize: "20px", flexShrink: 0 }}>
                       <i className="fa fa-map-marker"></i>
                     </div>
                     <div className="feature-content">

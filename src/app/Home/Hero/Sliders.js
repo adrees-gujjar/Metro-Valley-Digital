@@ -80,9 +80,14 @@ export default function Sliders() {
             <SwiperSlide
               className="single-slider"
               style={{
-                backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.88)), url(${singleSlider.bgImg.src})`,
+                backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.88)), url(${singleSlider.bgImg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center center",
+                minHeight: "840px",
+                paddingTop: "210px",
+                paddingBottom: "130px",
+                display: "flex",
+                alignItems: "center",
               }}
               key={singleSlider.id}
             >
@@ -90,7 +95,7 @@ export default function Sliders() {
                 <div className="row">
                   <div className="col-lg-8 col-md-10 col-12">
                     <div className="hero-content">
-                      <div className="hero-badge mb-3 d-inline-block px-3 py-1 rounded-pill" style={{ background: "rgba(13, 110, 253, 0.25)", border: "1px solid rgba(13, 110, 253, 0.5)", color: "#60a5fa", fontSize: "14px", fontWeight: "600" }}>
+                      <div className="hero-badge mb-3 d-inline-block px-3 py-1 rounded-pill" style={{ background: "rgba(40, 180, 99, 0.25)", border: "1px solid rgba(40, 180, 99, 0.5)", color: "#86efac", fontSize: "14px", fontWeight: "600" }}>
                         {singleSlider.tag}
                       </div>
                       <h1 style={{ color: "#ffffff", fontWeight: "800", textShadow: "0 2px 10px rgba(0,0,0,0.5)", lineHeight: "1.2" }}>
@@ -104,7 +109,7 @@ export default function Sliders() {
                         <a
                           href={singleSlider?.button.link}
                           className="theme-btn"
-                          style={{ boxShadow: "0 4px 15px rgba(13, 110, 253, 0.4)" }}
+                          style={{ boxShadow: "0 4px 15px rgba(40, 180, 99, 0.4)" }}
                         >
                           {singleSlider?.button.text}
                         </a>

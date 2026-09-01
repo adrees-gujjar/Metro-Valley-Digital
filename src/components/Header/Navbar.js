@@ -15,7 +15,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 80) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <>
       {/* <!-- Header Start --> */}
-      <header className={`header ${isSticky ? "sticky" : ""}`}>
+      <header className={`header ${isSticky ? "sticky" : "header-transparent"}`}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-12">
@@ -41,12 +41,12 @@ export default function Navbar() {
                   <div className="row align-items-center">
                     <div className="col-lg-3 col-md-4 col-8">
                       {/* <!-- Modern Agency Logo --> */}
-                      <div className="logo py-2">
-                        <AgencyLogo />
+                      <div className="logo py-1">
+                        <AgencyLogo isLight={!isSticky} />
                       </div>
                     </div>
                     <div className="col-lg-9 col-md-8 col-4">
-                      <div className="main-menu-top">
+                      <div className="main-menu-top d-flex align-items-center justify-content-end">
                         <div className="main-menu">
                           <div className="navbar">
                             <div className="nav-item">
@@ -245,14 +245,18 @@ export default function Navbar() {
                           </div>
                         </div>
                         {/* <!-- Menu-Right --> */}
-                        <div className="menu-right">
-                          <Link href="/contact" className="theme-btn">
+                        <div className="menu-right d-none d-lg-block ms-3">
+                          <Link href="/contact" className="theme-btn" style={{ padding: "9px 18px", fontSize: "13.5px", whiteSpace: "nowrap" }}>
                             <i className="fa fa-bolt me-1" style={{ marginRight: "6px" }}></i> Free Growth Audit
                           </Link>
                         </div>
                         {/* <!-- End-Menu-Right --> */}
+
+                        {/* <!-- Mobile Hamburger Toggler (Visible on <992px) --> */}
+                        <div className="d-lg-none ms-3 d-flex align-items-center">
+                          <MobileOffcanvas isSticky={isSticky} />
+                        </div>
                       </div>
-                      <MobileOffcanvas />
                     </div>
                   </div>
                 </div>
@@ -261,6 +265,7 @@ export default function Navbar() {
           </div>
         </div>
       </header>
+
       {/* <!-- End Header --> */}
     </>
   );

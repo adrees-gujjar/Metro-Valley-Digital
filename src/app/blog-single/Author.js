@@ -6,7 +6,7 @@ export default function Author() {
   return (
     <>
       <div className="post-author-box d-flex align-items-center gap-4 p-4 rounded-3" style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
-        <div className="author-img" style={{ width: "90px", height: "90px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, border: "3px solid #0d6efd" }}>
+        <div className="author-img" style={{ width: "90px", height: "90px", borderRadius: "50%", overflow: "hidden", flexShrink: 0, border: "3px solid #28b463" }}>
           <Image src={AuthorImg} alt="Tariq Vance" width={90} height={90} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <div className="author-content">

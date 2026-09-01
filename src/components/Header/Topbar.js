@@ -9,22 +9,22 @@ export default function Topbar() {
           <div className="row align-items-center">
             <div className="col-lg-8 col-12">
               <div className="topbar-address">
-                <ul className="d-flex flex-wrap align-items-center gap-3">
+                <ul className="d-flex flex-wrap align-items-center gap-2 gap-md-3 mb-0 list-unstyled">
                   <li>
                     <a href="tel:+16045403999" title="Canada Office">
-                      <i className="fa fa-phone" style={{ color: "#0d6efd" }}></i>
-                      <span>🇨🇦 CA:</span> +1 (604) 540-3999
+                      <i className="fa fa-phone" style={{ color: "var(--primary-color)" }}></i>
+                      <span>CA:</span> +1 (604) 540-3999
                     </a>
                   </li>
                   <li>
                     <a href="tel:+923482991899" title="Pakistan Office">
-                      <i className="fa fa-phone" style={{ color: "#198754" }}></i>
-                      <span>🇵🇰 PK:</span> +92 348 2991899
+                      <i className="fa fa-phone" style={{ color: "var(--primary-color)" }}></i>
+                      <span>PK:</span> +92 348 2991899
                     </a>
                   </li>
-                  <li>
+                  <li className="d-none d-sm-inline-block">
                     <a href="mailto:hello@metrovalleydigital.com">
-                      <i className="fa fa-envelope" style={{ color: "#0d6efd" }}></i>
+                      <i className="fa fa-envelope" style={{ color: "var(--primary-color)" }}></i>
                       <span>Email:</span> hello@metrovalleydigital.com
                     </a>
                   </li>
@@ -32,11 +32,29 @@ export default function Topbar() {
               </div>
             </div>
             <div className="col-lg-4 col-12 d-none d-lg-block text-end">
-              <div className="topbar-badge" style={{ fontSize: "13px", color: "#e2e8f0" }}>
-                <span className="badge bg-primary me-2" style={{ fontSize: "11px", padding: "4px 8px" }}>
-                  <i className="fa fa-circle text-success me-1" style={{ fontSize: "8px" }}></i> Accepting Clients
-                </span>
-                <span>Toronto • Lahore</span>
+              <div className="topbar-social">
+                <ul className="d-flex align-items-center justify-content-end gap-2 mb-0 list-unstyled">
+                  <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px" }}>
+                      <i className="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px" }}>
+                      <i className="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px" }}>
+                      <i className="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: "rgba(255,255,255,0.8)", fontSize: "14px" }}>
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -46,3 +64,4 @@ export default function Topbar() {
     </>
   );
 }
+

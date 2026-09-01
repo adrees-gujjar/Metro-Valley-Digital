@@ -75,7 +75,7 @@ export default function PortfolioSingle() {
                 {/* <!-- Single Widget --> */}
                 <div className="p-sidebar-widget" style={{ background: "#f8fafc", padding: "24px", borderRadius: "12px", border: "1px solid #e2e8f0" }}>
                   <div className="project-info">
-                    <h4 className="p-widget-title" style={{ fontWeight: "700", borderBottom: "2px solid #0d6efd", paddingBottom: "8px", marginBottom: "16px" }}>Project Scope</h4>
+                    <h4 className="p-widget-title" style={{ fontWeight: "700", borderBottom: "2px solid #28b463", paddingBottom: "8px", marginBottom: "16px" }}>Project Scope</h4>
                     <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                       <li style={{ padding: "8px 0", borderBottom: "1px solid #e2e8f0", fontSize: "14px" }}>
                         <b style={{ color: "#0f172a" }}>Client:</b> GTA Climate Solutions
@@ -93,12 +93,12 @@ export default function PortfolioSingle() {
                   </div>
                 </div>
                 {/* <!-- Single Widget --> */}
-                <div className="p-sidebar-widget mt-4" style={{ background: "linear-gradient(135deg, #0d6efd 0%, #0045a8 100%)", padding: "24px", borderRadius: "12px", color: "#ffffff" }}>
+                <div className="p-sidebar-widget mt-4" style={{ background: "linear-gradient(135deg, #28b463 0%, #16a34a 100%)", padding: "24px", borderRadius: "12px", color: "#ffffff" }}>
                   <h4 style={{ color: "#ffffff", fontWeight: "700", marginBottom: "12px" }}>Want Similar Results?</h4>
                   <p style={{ color: "#e2e8f0", fontSize: "14px", lineHeight: "1.6" }}>
                     Get a personalized Local SEO & Paid Ads roadmap for your business from our Toronto & Lahore teams.
                   </p>
-                  <Link href="/contact" className="btn btn-light w-100 fw-bold mt-2" style={{ color: "#0d6efd", padding: "10px" }}>
+                  <Link href="/contact" className="btn btn-light w-100 fw-bold mt-2" style={{ color: "#28b463", padding: "10px" }}>
                     Book Growth Audit
                   </Link>
                 </div>

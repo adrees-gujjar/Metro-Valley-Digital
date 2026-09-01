@@ -110,13 +110,13 @@ export default function BlogSidebar() {
           </ul>
         </div>
         {/* <!-- Banner Ad Widget --> */}
-        <div className="widget banner-ad-widget" style={{ background: "linear-gradient(135deg, #0d6efd 0%, #0045a8 100%)", borderRadius: "12px", padding: "28px 20px", color: "#ffffff", textAlign: "center" }}>
+        <div className="widget banner-ad-widget" style={{ background: "linear-gradient(135deg, #28b463 0%, #16a34a 100%)", borderRadius: "12px", padding: "28px 20px", color: "#ffffff", textAlign: "center" }}>
           <span className="badge bg-white text-primary px-3 py-1 rounded-pill fw-bold mb-3" style={{ fontSize: "11px" }}>FREE GROWTH AUDIT</span>
           <h4 style={{ color: "#ffffff", fontWeight: "800", fontSize: "20px", marginBottom: "12px" }}>Scale Your Inbound Revenue</h4>
           <p style={{ color: "#e2e8f0", fontSize: "14px", lineHeight: "1.6", marginBottom: "20px" }}>
             Get a tailored Google Maps & Meta Ads competitor blueprint from our Toronto & Lahore teams.
           </p>
-          <Link href="/contact" className="btn btn-light w-100 fw-bold py-2" style={{ borderRadius: "8px", color: "#0d6efd" }}>
+          <Link href="/contact" className="btn btn-light w-100 fw-bold py-2" style={{ borderRadius: "8px", color: "#28b463" }}>
             Book 30-Min Audit
           </Link>
         </div>

@@ -1,7 +1,6 @@
 import Hero from "./Home/Hero";
 import About from "./Home/About";
 import Service from "./Home/Service";
-import AiSearchSection from "./Home/AiSearchSection";
 import Portfolio from "./Home/Portfolio";
 import Team from "./Home/Team";
 import Testimonial from "./Home/Testimonial";
@@ -18,7 +17,6 @@ export default function Home() {
       <Hero />
       <About />
       <Service />
-      <AiSearchSection />
       <Portfolio />
       <Team />
       <Testimonial />
